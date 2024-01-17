@@ -18,7 +18,7 @@ jobs:
       - name: Git clone the repository
         uses: actions/checkout@v3
       - name: configure aws credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ env.ROLE_ARN }}
           role-session-name: ghactions
@@ -27,7 +27,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18.16.0'
-          cache: 'npm'
       - name: Install dependencies
         run: npm install
       - name: Build production website

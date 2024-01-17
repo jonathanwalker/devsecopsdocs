@@ -15,6 +15,31 @@ Nuclei is a powerful, community-driven vulnerability scanning tool that simplifi
 
 Before using Nuclei, ensure you have downloaded and installed it. You can find the installation instructions and source code in the [Nuclei GitHub repository](https://github.com/projectdiscovery/nuclei).
 
+#### Installation
+
+{{< tabs "create-new-site" >}}
+{{< tab "Go" >}}
+
+```bash
+go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
+```
+
+{{< /tab >}}
+{{< tab "macOS" >}}
+
+```bash
+brew install nuclei
+```
+
+{{< /tab >}}
+{{< tab "Docker" >}}
+
+```bash
+docker pull projectdiscovery/nuclei:latest
+```
+{{< /tab> }}
+{{< /tabs >}}
+
 #### Usage
 
 Nuclei is used via the command line and works with templates that define specific security checks. To scan a target, use a command like:

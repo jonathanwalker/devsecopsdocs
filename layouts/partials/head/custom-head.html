@@ -1,0 +1,15 @@
+<!-- Custom head -->
+
+<!-- Plausible Analytics script that should require SRI but cannot figure it out at the moment -->
+<script defer data-domain="{{ .Site.BaseURL }}" src="/js/script.js"></script>
+
+<!-- Favicon -->
+<meta name="theme-color" content="{{ $.Site.Params.themeColor }}">
+<link rel="icon" href="{{ "favicon.ico" | absURL }}" sizes="any">
+{{ if os.FileExists "static/favicon.ico" -}}
+  <link rel="icon" type="image/svg+xml" href="{{ "favicon.ico" | absURL }}">
+{{ end -}}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon.ico" | absURL }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon.ico" | absURL }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon.ico" | absURL }}">
+<link rel="manifest" crossorigin="use-credentials" href="{{ "site.webmanifest" | absURL }}">

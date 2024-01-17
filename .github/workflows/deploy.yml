@@ -1,0 +1,41 @@
+name: Deploy Static Site
+on:
+  push:
+    branches:
+      - main
+env:
+  BUCKET_NAME: ${{ secrets.DSOD_BUCKET }}
+  ROLE_ARN:    ${{ secrets.DSOD_ROLE_ARN }}
+  CF_DISTRO:   ${{ secrets.DSOD_CF_ID }}
+  AWS_REGION:  "us-east-1"
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git clone the repository
+        uses: actions/checkout@v3
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ env.ROLE_ARN }}
+          role-session-name: ghactions
+          aws-region: ${{ env.AWS_REGION }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.16.0'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
+      - name: Build production website
+        run: npm run build
+      - name: Sync static site
+        run: |
+          cd public/
+          aws s3 sync . s3://${{ env.BUCKET_NAME }}/ --delete
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ env.CF_DISTRO }} --paths "/*"

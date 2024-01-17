@@ -37,7 +37,8 @@ brew install nuclei
 ```bash
 docker pull projectdiscovery/nuclei:latest
 ```
-{{< /tab> }}
+
+{{< /tab >}}
 {{< /tabs >}}
 
 #### Usage

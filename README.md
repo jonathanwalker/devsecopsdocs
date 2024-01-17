@@ -31,6 +31,10 @@ To view and build the site locally, run the following commands.
 npm run dev
 ```
 
+## Build
+
+This repository uses github actions to build and deploy the hugo site to S3. Once uploaded, cloudfront serves the pages to the users.
+
 ## Credit
 
 - [Hugo](https://gohugo.io/documentation/)

@@ -16,17 +16,17 @@
 #   identifier = "lorem"
 #   url = "/docs/lorem/"
 
-[[guide]]
-  name = "Lorem"
-  weight = 10
-  identifier = "lorem"
-  url = "/guide/lorem/"
+#[[guide]]
+#  name = "Lorem"
+#  weight = 10
+#  identifier = "lorem"
+#  url = "/guide/lorem/"
 
-[[tutorial]]
-  name = "Lorem"
-  weight = 10
-  identifier = "lorem"
-  url = "/tutorial/lorem/"
+#[[tutorial]]
+#  name = "Lorem"
+#  weight = 10
+#  identifier = "lorem"
+#  url = "/tutorial/lorem/"
 
 [[main]]
   name = "Docs"
@@ -60,7 +60,6 @@
 
 [[footer]]
   name = "Powered by Terraform, Hugo, and Doks"
-  #url = "/privacy/"
   weight = 10
 
 # [[footer]]

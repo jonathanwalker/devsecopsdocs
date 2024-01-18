@@ -1,5 +1,5 @@
 ---
-title: "IntroductionDocumentation"
+title: "Introduction"
 description: "Documentation surrounding each component within DevSecOps."
 menu:
   docs:

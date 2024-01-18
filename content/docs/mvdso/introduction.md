@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Overview"
 description: "Minimum Viable DevSecOps is what is necassary to have a successful DevSecOps team."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00

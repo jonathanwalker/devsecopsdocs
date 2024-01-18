@@ -1,5 +1,5 @@
 title = "DevSecOpsDocs"
-baseurl = "devsecopsdocs.com"
+baseurl = "https://devsecopsdocs.com/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true

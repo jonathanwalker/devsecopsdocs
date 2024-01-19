@@ -84,3 +84,7 @@ copyRight = "Copyright (c) 2024 Jonathan Walker"
   hint = "photo"
   quality = 85
   resampleFilter = "Lanczos"
+
+[params.plausible]
+  enable = true
+  domain = "devsecopsdocs.com"

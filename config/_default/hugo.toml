@@ -85,6 +85,7 @@ copyRight = "Copyright (c) 2024 Jonathan Walker"
   quality = 85
   resampleFilter = "Lanczos"
 
+theme = ["plausible-hugo"]  # Add this theme to your already existing other themes
 [params.plausible]
-  enable = true
+  enable = true 
   domain = "devsecopsdocs.com"

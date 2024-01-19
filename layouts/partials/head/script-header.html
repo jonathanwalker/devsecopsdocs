@@ -1,10 +1,4 @@
 <!-- Insert scripts NOT needed by stylesheets here -->
 
 <!-- Plausible Analytics script -->
-document.addEventListener("DOMContentLoaded", function() {
-    var plausibleScript = document.createElement('script');
-    plausibleScript.defer = true;
-    plausibleScript.setAttribute('data-domain', 'devsecopsdocs.com');
-    plausibleScript.src = '/js/script.js';
-    document.head.appendChild(plausibleScript);
-  });
+<script defer data-domain="{{ .Site.BaseURL }}" src="/js/script.js"></script>

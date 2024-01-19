@@ -146,5 +146,5 @@ During my research of adoption, using signed commits is not well established at 
 For further reading and sources. 
 
 - [Signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits)
-- [Generating a new GPG key](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key), 
+- [Generating a new GPG key](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
 - [About Commit Email Addresses](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#about-commit-email-addresses)

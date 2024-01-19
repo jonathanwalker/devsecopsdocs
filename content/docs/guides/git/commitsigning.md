@@ -38,4 +38,4 @@ git config commit.gpgsign true
 For further reading and sources. 
 
 - [Signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits)
-- [Generating a new GPG key](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key), 
+- [Generating a new GPG key](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)

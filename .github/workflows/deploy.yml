@@ -27,10 +27,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18.16.0'
+          cache: 'npm'
       - name: Install dependencies
-        run: npm install
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build production website
-        run: npm run build
+        env:
+          # For maximum backward compatibility with Hugo modules
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          npm run build \
+            -- \
+            --gc \
+            --minify
       - name: Sync static site
         run: |
           cd public/

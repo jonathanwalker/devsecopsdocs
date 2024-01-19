@@ -5,7 +5,7 @@
   <br>
 </h1>
 
-This site is meant to host documentation, as well as blogs, for DevSecOps related topics. This includes things such as securing the software development lifecycle, cloud security, infrastructure as code, and modern cloud native applications. Contributions are welcome!
+This site is meant to host documentation, as well as blogs, for DevSecOps related topics. This includes things such as securing the software development lifecycle, cloud security, infrastructure as code, and modern cloud native applications. Contributions are welcome, just submit your pull request no matter how small!
 
 ## Blogs
 

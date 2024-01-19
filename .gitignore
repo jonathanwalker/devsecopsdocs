@@ -3,4 +3,3 @@ public
 resources
 .hugo_build.lock
 .DS_Store
-hugo_stats.json

@@ -1,6 +1,6 @@
 ---
 title: "Capability Maturity Model"
-description: ""
+description: "Overview of a capability maturity model."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false

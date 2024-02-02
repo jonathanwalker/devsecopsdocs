@@ -32,3 +32,14 @@ There are plenty of open source vulnerable by design environment available for y
 ### Juice Shop
 
 [Juice Shop](https://github.com/juice-shop/juice-shop) is a comprehensive open source web application for practicing application security skills and techniques. It simulates an e-commerce application with a range of features that you can exploit and attack. It can help individuals build their skills and knowledge on how an application can be exploited through real world examples. 
+
+
+## Secure Code Training
+
+Providing developers and application security training is a key part of ongoing training you should promote throughout your organization. Here are some resources regarding secure code training. 
+
+- [SecureFlag](https://www.secureflag.com/)
+- [Secure Code Warrior](https://www.securecodewarrior.com/)
+- [Security Journey](https://www.securityjourney.com/)
+- [APISEC University](https://www.apisecuniversity.com/)
+- [Codewars](https://www.codewars.com/)
